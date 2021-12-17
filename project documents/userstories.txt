@@ -1,0 +1,13 @@
+User stories for MVP:
+
+1.  User signs up for new account  V
+
+2.  User signs in.  V
+
+3.  User views an active prediction.  V
+
+4.  User views an active prediction and inputs a result V
+
+5.  User navigates to create a prediction view and creates a new custom prediction.
+
+6.  User navigates to resolved prediction view a resolved prediction
