@@ -1,5 +1,6 @@
 package com.dylan.sage.runners;
 
+import com.dylan.sage.pages.CustomPrediction;
 import com.dylan.sage.pages.SageLanding;
 import com.dylan.sage.pages.SageResolved;
 import com.dylan.sage.pages.SageSignIn;
@@ -17,8 +18,9 @@ public class SageRunner {
 
     public static WebDriver driver;
     public static SageSignIn signIn;
-    public static SageLanding Landing;
-    public static SageResolved Resolved;
+    public static SageLanding landing;
+    public static SageResolved resolved;
+    public static CustomPrediction customPredictionPage;
 
     @BeforeClass
     public static void setUp() {
@@ -31,8 +33,9 @@ public class SageRunner {
         driver = new ChromeDriver();
 
         signIn = new SageSignIn(driver);
-        Landing = new SageLanding(driver);
-        Resolved = new SageResolved(driver);
+        landing = new SageLanding(driver);
+        resolved = new SageResolved(driver);
+        customPredictionPage = new CustomPrediction(driver);
     }
 
     @AfterClass

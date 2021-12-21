@@ -1,57 +1,58 @@
 package com.dylan.sage.steps;
 
-import com.dylan.sage.pages.SageSignIn;
+import com.dylan.sage.pages.SageLanding;
 import com.dylan.sage.runners.SageRunner;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 
-public class SignInStepImpl {
+public class PredictionViewSteps {
 
-    public static SageSignIn sageSignIn = SageRunner.signIn;
+    public static SageLanding landingPage = SageRunner.landing;
     public static WebDriver driver = SageRunner.driver;
 
-    @Given("User is on the sign in page")
-    public void user_is_on_the_sign_in_page() {
+    @Given("User is on the landing page")
+    public void user_is_on_the_landing_page() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
 
-    @When("User enters invalid login information")
-    public void user_enters_invalid_login_information() {
+    @When("User selects a prediction to view")
+    public void user_selects_a_prediction_to_view() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
 
-    @When("User types the correct username")
-    public void user_types_the_correct_username() {
+    @Then("Information about that prediction is displayed")
+    public void information_about_that_prediction_is_displayed() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
 
-    @When("User types in the correct password")
-    public void user_types_in_the_correct_password() {
+    @Given("User is viewing a prediction")
+    public void user_is_viewing_a_prediction() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
 
-    @When("User presses sign in")
-    public void user_presses_sign_in() {
+    @When("User enters a prediction result")
+    public void user_enters_a_prediction_result() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
 
-    @Then("An error message is displayed")
-    public void an_error_message_is_displayed() {
+    @When("User presses the enter button")
+    public void user_presses_the_enter_button() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
 
-    @Then("User has successfully logged in")
-    public void user_has_successfully_logged_in() {
+    @Then("The result is entered and the prediction is resolved")
+    public void the_result_is_entered_and_the_prediction_is_resolved() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
-
 }
+
+
